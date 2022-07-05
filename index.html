@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>TO DO LIST</h2>
+        <form class="to-do-input">
+            <input type="text" name="text" placeholder="Enter a Task" required>
+            <input type="submit" class="add" value="+">
+        </form>
+        <div class="">
+            <ul class="to-do-list">
+                <li class="to-do-items"><input type="checkbox"><span>Lorem</span><input type="button" class="buttons"
+                        value="Delete"></li>
+                <li class="to-do-items"><input type="checkbox"><span>Lipsum</span><input type="button" class="buttons"
+                        value="Delete"></li>
+                <li class="to-do-items"><input type="checkbox"><span>Lipsum</span><input type="button" class="buttons"
+                        value="Delete"></li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: url("https://picsum.photos/id/109/600/600") center no-repeat;
+            background-size: cover;
+        }
+
+        .wrapper {
+            padding: 30px;
+            min-width: 60%;
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+            background-color: rgba(255, 255, 255, 0.80);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #bd9609bd;
+        }
+
+        .to-do-input {
+            padding: 20px 0;
+        }
+
+        .to-do-list {
+            list-style: none;
+            padding: 1em;
+        }
+
+        li {
+            display: flex;
+            padding: 0.5em;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        input[type=text] {
+            padding: 8px;
+            width: 55%;
+            font-size: medium;
+        }
+
+        input[type=checkbox] {
+            margin-right: 0.3em;
+            font-size: x-large;
+        }
+
+        .buttons {
+            border: none;
+            border-radius: 2px;
+            font-size: medium;
+            color: white;
+            background-color: rgba(202, 11, 0, 0.9);
+            cursor: pointer;
+        }
+
+        .add {
+            padding: 9px 15px;
+            border: none;
+            border-radius: 2px;
+            color: white;
+            background-color: #ffc600;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        span {
+            width: 70%;
+            padding: 5px;
+            text-align: left;
+            font-size: large;
+            cursor: pointer;
+        }
+        .checkClass{
+            text-decoration: line-through;
+        }
+        .to-do{
+            padding: 10px 0;
+            margin: 0;
+            text-align: left;
+            width: 100%;
+        }
+        li:hover{
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        .background{
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    </style>
+    <script src="index.js"></script>
+</body>
+
+</html>
